@@ -16,13 +16,13 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html")
 
-@app.route("/1006")
+@app.route("/movies")
 def test123():
-    return render_template("1006.html")
+    return render_template("movies.html")
 
-@app.route("/columbia")
+@app.route("/directors")
 def columbia():
-    return "Columbia!!"
+    return render_template("directors.html")
 
 #start the server
 if __name__ == "__main__":
